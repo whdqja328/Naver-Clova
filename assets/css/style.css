@@ -14,6 +14,7 @@
 #nav ul.menu_list li.item a.menu_link { display: block; height: 86px; padding: 34px 36px; color: rgba(255, 255, 255, .6); font-size: 16px; font-weight: 700; line-height: 16px; letter-spacing: -.25px; box-sizing: border-box; } 
 #nav a.menu_link:hover .item_wrap { color: #fff; border-bottom: 1px solid #fff; } 
 #nav .menu_sub_list { display: none; background-color: rgba(0, 0, 0, 0.8); position: absolute; top: 86px; left: 0; right: 0; z-index: 999; min-height: 139px; padding: 20px 0; min-width: 1176px; } 
+.wrapper #nav .menu_sub_list {background-color: #000;}
 #nav .item.on>.menu_sub_list { display: block; } 
 #nav .menu_list .menu_sub_list .sub_item+.sub_item { margin-left: 130px; } 
 #nav .sub_item { display: inline-block; vertical-align: top; } 
@@ -123,13 +124,30 @@ main .btn_more { margin-top: 25px; padding: 0 32px 0 33px; font-size: 16px; font
 .section_main .btn_box { margin-top: 50px; font-size: 0; } 
 .section_main .btn_box .btn_download { display: inline-block; vertical-align: top; padding: 0 22px; border: 1px solid #d2d2d2; border-radius: 28px; font-family: Poppins,NanumSquare,나눔스퀘어,Nanum Barun Gothic,나눔바른고딕,"Nanum Barun Gothic",NanumGothic,"나눔고딕",sans-serif; font-size: 17px; font-weight: 400; line-height: 56px; color:rgba(0,0,0,.8); letter-spacing: -1px; } 
 .section_main .btn_download+.btn_download { margin-left: 14px; } 
-.section_main .btn_download::before { background-position: -1182px -699px; background-repeat: no-repeat; background-image: linear-gradient(transparent,transparent),url(../img/sp_svg_clova.png); background-size: 1690px 880px; width: 24px; height: 32px; display: inline-block; vertical-align: top; margin: 13px 7px 0 0; content: ''; } 
+.section_main .btn_download::before { background-position: -1182px -699px; background-repeat: no-repeat; background-image: url(../img/sp_svg_clova.png); background-size: 1690px 880px; width: 24px; height: 32px; display: inline-block; vertical-align: top; margin: 13px 7px 0 0; content: ''; } 
 .section_main .btn_download.ios:before { background-position: -1214px -699px; background-repeat: no-repeat; width: 26px; height: 31px; } 
 
 /* section_info */
 .section_info {position: relative; padding-top: 173px; text-align: left;}
 .section_info .inner {width: 996px; overflow: hidden; margin: 0 auto;}
+.section_info .device_box {float: left; position: relative; padding: 22px 23px 24px; background-image: url(../img/bg_shadow.png);}
+.section_info .img_area {overflow: hidden; width: 352px; height: 704px; border-radius: 45px; font-size: 0;}
+.section_info .info_list {width: 2112px; white-space: nowrap;}
+.section_info .info_list [class^=info_item] {overflow: hidden; position: relative; display: inline-block; vertical-align: top; width: 352px; height: 704px;}
+.section_info .info_list [class^=info_item]::before {background-position: -816px -699px; background-repeat: no-repeat; width: 358px; height: 54px; position: absolute; top: 0; left: 0; right: 0; display: block; content: ''; z-index: 10; background-color: #fafafd;}
+.section_info .info_list [class^=info_item].info_item_01::before {background-position: -1328px -687px; background-repeat: no-repeat; width: 358px; height: 54px; background-color: #000;}
+.section_info .info_list [class^=info_item].info_item_02::before {background-color: #fff;}
+.section_info .text_area {float: left; margin: 196px 0 0 100px;}
+.section_info .title {display: block; font-size: 48px; line-height: 60px; letter-spacing: -1px;}
+.section_info .desc_list {position: relative; width: 450px; height: 102px; margin-top: 16px;}
+._swiper1_desc_2 {display: none;}
 
+/* section_assistant  */
+.section_assistant {position: relative; padding-top: 245px;}
+.section_assistant .inner {margin: 0 auto;}
+.section_assistant .text_area::before {content: ''; background-image: linear-gradient(transparent,transparent),url(../img/sp_svg_clova.png); background-size: 1690px 880px; background-position: -126px -762px; background-repeat: no-repeat; width: 92px; height: 110px; display: block; margin: 0 auto 36px; }
+
+.section_assistant .contents_area {overflow: hidden; position: relative; height: 710px; margin-top: 72px;}
 
 
 
