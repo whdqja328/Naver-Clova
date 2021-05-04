@@ -1,4 +1,7 @@
 @charset "utf-8"; /* header */
+body {
+    -webkit-font-smoothing: antialiased;
+}
 .header_dark { position: fixed; top: 0; right: 0; left: 0; min-width: 1240px; height: 86px; text-align: center; z-index: 100; box-sizing: border-box; background-color: rgba(0, 0, 0, 0.8); transition: all 0.3s ease-in-out; } 
 .header_dark.up { background-color: #000; border-bottom: 1px solid #2c2c2c; filter: invert(100%); } 
 .wrapper .header_dark { background-color: #000; border-bottom: 1px solid #2c2c2c; filter: invert(100%); } 
@@ -140,13 +143,17 @@ main .btn_more { margin-top: 25px; padding: 0 32px 0 33px; font-size: 16px; font
 .section_info .text_area {float: left; margin: 196px 0 0 100px;}
 .section_info .title {display: block; font-size: 48px; line-height: 60px; letter-spacing: -1px;}
 .section_info .desc_list {position: relative; width: 450px; height: 102px; margin-top: 16px;}
+.section_info .paginate {margin-top: 40px; font-size: 0;}
+.section_info .paginate a {display: inline-block; width: 30px; height: 3px; padding: 10px 0; outline: 0;}
+.section_info .paginate a+a {margin-left: 8px;}
+.section_info .paginate a::before {content: ''; display: block; background-color: #e9eefe; height: 3px;}
+.section_info .paginate a.active::before {background: #22d487;}
 ._swiper1_desc_2 {display: none;}
 
 /* section_assistant  */
 .section_assistant {position: relative; padding-top: 245px;}
 .section_assistant .inner {margin: 0 auto;}
 .section_assistant .text_area::before {content: ''; background-image: linear-gradient(transparent,transparent),url(../img/sp_svg_clova.png); background-size: 1690px 880px; background-position: -126px -762px; background-repeat: no-repeat; width: 92px; height: 110px; display: block; margin: 0 auto 36px; }
-
 .section_assistant .contents_area {overflow: hidden; position: relative; height: 710px; margin-top: 72px;}
 
 
