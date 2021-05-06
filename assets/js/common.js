@@ -60,9 +60,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 변수 지정    
     const slideWrap = document.querySelector('.slide_wrap'),
-        slideContainer = document.querySelector('.slide_container'),
-        slides = document.querySelectorAll('.slide'),
-        pagerBtn = document.querySelectorAll('.pager a');
+          slideContainer = document.querySelector('.slide_container'),
+          slides = document.querySelectorAll('.slide'),
+          pagerBtn = document.querySelectorAll('.pager a');
 
     let slideCount = slides.length,
         currentIndex = 0,
