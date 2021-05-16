@@ -1,3 +1,11 @@
+let atag = document.querySelectorAll('.btn_more');
+
+for(let i = 0; i < atag.length; i++){
+    atag[i].addEventListener('click',function(reset){
+        reset.preventDefault();
+    })
+}
+
 
 // Nav Menu
 const menuList = document.querySelectorAll('.menu_list > li');
@@ -66,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let slideCount = slides.length,
         currentIndex = 0,
-        timer = undefined;
+        timer = null;
 
     // 슬라이드 가로로 배열하기
     for (let i = 0; i < slideCount; i++) {
@@ -100,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             goToSlide(nextIdx);
 
-        }, 4000);
+        }, 4500);
     }
 
     startAutoSlide();
@@ -122,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function () {
     //pager로 슬라이드 이동하기
     for (let a = 0; a < pagerBtn.length; a++) {
         pagerBtn[a].addEventListener('click', function (e) {
-
+            e.preventDefault();
             let pagerNum = e.target.getAttribute('data-idx');
             goToSlide(pagerNum);
 
