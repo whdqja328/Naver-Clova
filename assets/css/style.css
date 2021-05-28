@@ -145,20 +145,6 @@ main .btn_more { margin-top: 25px; padding: 0 32px 0 33px; font-size: 16px; font
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* section_main */
 .section_main { position: relative; padding-top: 216px; text-align: left;; } 
 .section_main .inner { overflow: hidden; width: 1026px; margin: 0 auto; } 
@@ -200,14 +186,6 @@ main .btn_more { margin-top: 25px; padding: 0 32px 0 33px; font-size: 16px; font
 .section_assistant .device_box {background-position: 0 0; background-repeat: no-repeat; width: 504px; height: 687px; position: absolute; display: block; bottom: 0; left: 50%; transform: translateX(-50%); background-image: url(../img/sp_svg_clova.png); background-size: 1012px 1006px;}
 .section_assistant .device_box::after {background-position: -508px 0; background-repeat: no-repeat; width: 504px; height: 687px; position: absolute;
 top: 0; left: 0; right: 0; bottom: 0; content: ''; background-image: url(../img/sp_clova.png); background-size: 1012px 1006px;}
-
-
-
-
-
-
-
-
 
 .section_assistant .guide_area {position: relative; overflow: hidden; background-color: #edeff5; height: 180px;}
 .section_assistant .guide_list {position: absolute; top: 0; left: 50%; overflow: hidden; width: 2122px; height: 180px; text-align: center; white-space: nowrap; transform: translateX(-50%);}
@@ -256,20 +234,17 @@ background: url(../img/sp_svg_clova.png) -1328px -4px no-repeat; background-size
 .section_pin .section_function .pager .item+.item {margin-left: 6px;}
 .section_pin .section_function .pager .item::before {content: ''; display: block; background-color: #fff; opacity: 0.2; height: 3px;}
 .section_pin .section_function .pager .item.on::before {opacity: 1; transition: opacity .3s ease;}
-
-
 .section_pin .section_function .command {position: absolute; width: 100%; height: 100%; background: url(../img/bg_command.jpg) 50% 50% no-repeat; background-size: cover;}
-.section_pin .command  .device_box {}
 
-
-
-
-
-
-
-
-
-
+/* section_guide */
+.section_guide {position: relative; padding: 186px 0 189px; text-align: left;}
+.section_guide::after {content: ''; position: absolute; left: 50%; top: 0; right: 0; bottom: 0; background: url(../img/bg_guide.jpg) 0 50% no-repeat; background-size: cover;}
+.section_guide .inner {overflow: hidden; width: 1176px; margin: 0 auto;}
+.section_guide .inner::after {content: ''; display: block; position: relative; width: 358px; height: 678px; float: left; margin-left: 120px; z-index: 10; background: url(../img/device_guide.png); background-size: cover;}
+.section_guide .text_area {float: left; margin-top: 203px;}
+.section_guide .title {letter-spacing: -1.5px;}
+.section_guide .btn_more {display: inline-block; vertical-align: top; padding: 0 34px; margin-top: 40px; background-color: #00d37a; border-radius: 48.5px;
+font-size: 18px; font-weight: 900; line-height: 60px; color: #fff; letter-spacing: -.47px;}
 
 /* footer */
 #footer { position: relative; min-width: 1240px; height: 132px; background-color: #191919; color: #666; font-size: 13px; font-weight: 700; line-height: 14px; letter-spacing: -.3px; } 
