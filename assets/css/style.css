@@ -1,8 +1,10 @@
 @charset "utf-8"; /* header */
 .header_dark { position: fixed; top: 0; right: 0; left: 0; min-width: 1240px; height: 86px; text-align: center; z-index: 100; box-sizing: border-box; background-color: rgba(0, 0, 0, 0.8); transition: all 0.3s ease-in-out; } 
-.header_dark.up { background-color: #000; border-bottom: 1px solid #2c2c2c; filter: invert(100%); z-index: 200;} 
-.wrapper .header_dark { background-color: #000; border-bottom: 1px solid #2c2c2c; filter: invert(100%); } 
+.header_dark.up { background-color: #111; border-bottom: 1px solid #2c2c2c; filter: invert(100%); z-index: 200;} 
+.wrapper .header_dark { background-color: rgba(0, 0, 0,0.5); border-bottom: 1px solid #2c2c2c; filter: invert(100%); } 
 .wrapper .header_dark .menu_sub_list { border-bottom: 1px solid #2c2c2c; } 
+.bg_01 {width: 550px; height: 550px; position: absolute; top: 0; right: 0; background: radial-gradient(rgb(95, 221, 167), rgb(104, 223, 154));
+    border-radius: 100%;}
 .wrapper .bg_02 {position: absolute; top: 1517px; left: 0; right: 0; height: 972px; background-image: linear-gradient(to top, #f2f5f8, #fff);}
 .header { width: 1140px; height: 100%; margin: 0 auto; z-index: 10; } 
 .header .logo { float: left; margin-top: 32px; } 
