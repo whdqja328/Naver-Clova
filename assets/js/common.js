@@ -9,7 +9,7 @@ for (let i = 0; i < atag.length; i++) {
 // Nav Menu
 const menuList = document.querySelectorAll(".menu_list > li");
 
-for (let i = 0; i < menuList.length; i++) {
+for (let i = 0, max = menuList.length; i < max; i++) {
   menuList[i].addEventListener("mouseenter", function (e) {
     e.target.classList.add("on");
   });

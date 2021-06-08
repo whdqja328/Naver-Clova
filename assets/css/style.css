@@ -176,27 +176,32 @@ main .btn_more { margin-top: 25px; padding: 0 32px 0 33px; font-size: 16px; font
 /* section_info */
 .section_info { position: relative; padding-top: 173px; text-align: left; } 
 .section_info .inner { width: 996px; overflow: hidden; margin: 0 auto; } 
-.section_info .device_box { float: left; position: relative; padding: 22px 23px 24px; background-image: url(../img/bg_shadow.png); } 
+.section_info .device_box { float: left; position: relative; padding: 22px 23px 24px; background-image: url("../img/bg_shadow.png"); } 
 .section_info .img_area { overflow: hidden; width: 352px; height: 704px; border-radius: 45px; font-size: 0; } 
 .section_info .info_list { width: 2112px; white-space: nowrap; } 
 .section_info .info_list [class^=info_item] { overflow: hidden; position: relative; display: inline-block; vertical-align: top; width: 352px; height: 704px; } 
-.section_info .info_list [class^=info_item]::before { background-position: -816px -699px; background-repeat: no-repeat; width: 358px; height: 54px; position: absolute; top: 0; left: 0; right: 0; display: block; content: ''; z-index: 10; background-color: #fafafd; } 
-.section_info .info_list [class^=info_item].info_item_01::before { background-position: -1328px -687px; background-repeat: no-repeat; width: 358px; height: 54px; background-color: #000; } 
-.section_info .info_list [class^=info_item].info_item_02::before { background-color: #fff; } 
+.section_info .info_list [class^=info_item] img {width: 100%; transform: translateY(0); transition: all 1s cubic-bezier(.54,.03,.3,.9) .5s;}
+.section_info .info_list [class^=info_item]::before {background-size: 1690px 880px; background-repeat: no-repeat; width: 358px; height: 54px; position: absolute; top: 0; left: 0; right: 0; display: block; content: ''; z-index: 10; background-color: #fafafd; } 
+.section_info .info_list [class^=info_item].info_item_01::before {background-image: url("../img/sp_svg_clova.png"); background-position: -1328px -687px; background-color: #000;} 
+.section_info .info_list [class^=info_item].info_item_02::before {background-image: url("../img/sp_svg_clova.png"); background-position: -816px -699px; background-color: #fff;} 
+.section_info .info_list [class^=info_item].info_item_03::before {background-image: url("../img/sp_svg_clova.png"); background-position: -816px -699px;} 
+.section_info .info_list [class^=info_item].info_item_04::before {background-image: url("../img/sp_svg_clova.png"); background-position: -816px -699px;} 
+.section_info .info_list [class^=info_item].info_item_01 img {transition: all 1.2s cubic-bezier(.54,.03,.3,.9);}
+.section_info .info_list [class^=info_item].info_item_01[aria-hidden=false] img {transform: translateY(-635px); transition-delay: .5s;}
 .section_info .text_area { float: left; margin: 196px 0 0 100px; } 
 .section_info .title { display: block; font-size: 48px; line-height: 60px; letter-spacing: -1px; } 
 .section_info .desc_list { position: relative; width: 450px; height: 102px; margin-top: 16px; } 
-.section_info .paginate { margin-top: 40px; font-size: 0; } 
+.section_info .paginate { margin-top: 40px; font-size: 0; }  
 .section_info .paginate a { display: inline-block; width: 30px; height: 3px; padding: 10px 0; outline: 0; } 
 .section_info .paginate a+a { margin-left: 8px; } 
 .section_info .paginate a::before { content: ''; display: block; background-color: #e9eefe; height: 3px; } 
-.section_info .paginate a.active::before { background: #22d487; } 
+.section_info .paginate a.on::before { background-color: #22d487; } 
 ._swiper1_desc_2 { display: none; } 
 
 /* section_assistant */
 .section_assistant { position: relative; padding-top: 245px; } 
 .section_assistant .inner { margin: 0 auto; } 
-.section_assistant .text_area::before { content: ''; background-image: linear-gradient(transparent,transparent),url(../img/sp_svg_clova.png); background-size: 1690px 880px; background-position: -126px -762px; background-repeat: no-repeat; width: 92px; height: 110px; display: block; margin: 0 auto 36px; } 
+.section_assistant .text_area::before { content: ''; background-image: linear-gradient(transparent,transparent),url("../img/sp_svg_clova.png");  background-size: 1690px 880px; background-position: -126px -762px; background-repeat: no-repeat; width: 92px; height: 110px; display: block; margin: 0 auto 36px; } 
 .section_assistant .contents_area { overflow: hidden; position: relative; height: 710px; margin-top: 72px; background-color: #f2f5f8; } 
 .section_assistant .device_box { background-position: 0 0; background-repeat: no-repeat; width: 504px; height: 687px; position: absolute; display: block; bottom: 0; left: 50%; transform: translateX(-50%); background-image: url(../img/sp_svg_clova.png); background-size: 1012px 1006px; } 
 .section_assistant .device_box::after { background-position: -508px 0; background-repeat: no-repeat; width: 504px; height: 687px; position: absolute; top: 0; left: 0; right: 0; bottom: 0; content: ''; background-image: url(../img/sp_clova.png); background-size: 1012px 1006px; } 
