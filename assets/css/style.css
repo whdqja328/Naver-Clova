@@ -1,11 +1,13 @@
-@charset "utf-8"; /* header */
-.header_dark { position: fixed; top: 0; right: 0; left: 0; min-width: 1240px; height: 86px; text-align: center; z-index: 100; box-sizing: border-box; background-color: rgba(0, 0, 0, 0.8); transition: all 0.3s ease-in-out; } 
-.header_dark.up { background-color: #000; border-bottom: 1px solid #2c2c2c; z-index: 200; filter: invert(100%); } 
-.wrapper .header_dark { background-color: rgba(0, 0, 0,0.5); border-bottom: 1px solid #2c2c2c; filter: invert(100%); } 
+@charset "utf-8"; 
+/* header */
+.header_dark { position: fixed; top: 0; right: 0; left: 0; min-width: 1240px; height: 86px; text-align: center; z-index: 100; box-sizing: border-box; background-color: rgba(0, 0, 0, 0.8); transition: all 0.3s ease-in-out; border-bottom: 1px solid rgba(255,255,255,.05); } 
+.header_dark.up { background-color: #000; border-bottom: 1px solid rgba(0,0,0,.05); z-index: 200;} 
+.wrapper .header_dark { background-color: rgba(0, 0, 0,0.5); filter: invert(100%); } 
 .wrapper .header_dark .menu_sub_list { border-bottom: 1px solid #2c2c2c; } 
 .animation { overflow: hidden; width: 100%; position: absolute; height: 1517px; } 
 .circle_right { width: 500px; height: 500px; position: absolute; top: -100px; right: -100px; background: radial-gradient(rgb(95, 221, 167), rgb(104, 223, 154),rgb(0, 204, 165)); border-radius: 100%; animation: right 6s infinite; } 
-.circle_left { width: 350px; height: 350px; border-radius: 50%; position: absolute; left: -300px; top: 778px; background: radial-gradient(rgb(83, 226, 247),rgb(104, 223, 154));animation: left 10s infinite; } 
+.circle_left { width: 200px; height: 200px; border-radius: 250px; border: 120px solid transparent; background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #6aecc3, #81eecd, #69e5f7); position: absolute; left: -300px; top: 778px; animation: left 10s infinite; background-origin: border-box;
+    background-clip: content-box, border-box;} 
 @keyframes right { 
  0% { transform: translatex(50px) translatey(-30px) } 
 50% { transform: translatex(20px) translatey(20px); } 
@@ -19,15 +21,15 @@
  }
 
 .wrapper .bg_02 { position: absolute; top: 1517px; left: 0; right: 0; height: 972px; background-image: linear-gradient(to top, #f2f5f8, #fff); } 
-.header { width: 1140px; height: 100%; margin: 0 auto; z-index: 10; } 
+.header { width: 1140px; height: 100%; margin: 0 auto; z-index: 10;  } 
 .header .logo { float: left; margin-top: 32px; } 
 .header .logo_link::before { content: ''; display: block; width: 145px; height: 22px; background: url(../img/sp_svg_icon.png) no-repeat -4px -4px; } 
 
 /* nav 전체메뉴 */
 #nav { float: left; } 
-#nav ul.menu_list { margin-left: 130px; text-align: center; font-size: 0; } 
+#nav ul.menu_list { margin-left: 123px; text-align: center; font-size: 0; } 
 #nav ul.menu_list li.item { display: inline-block; } 
-#nav ul.menu_list li.item a.menu_link { display: block; height: 86px; padding: 34px 36px; color: rgba(255, 255, 255, .6); font-size: 16px; font-weight: 700; line-height: 16px; letter-spacing: -.25px; box-sizing: border-box; } 
+#nav ul.menu_list li.item a.menu_link { display: block; height: 86px; padding: 34px 36px; color: rgba(255, 255, 255, .6); font-size: 16px; line-height: 16px; letter-spacing: -.25px; box-sizing: border-box; } 
 #nav a.menu_link:hover .item_wrap { color: #fff; border-bottom: 1px solid #fff; } 
 #nav .menu_sub_list { display: none; background-color: rgba(0, 0, 0, 0.8); position: absolute; top: 86px; left: 0; right: 0; z-index: 999; min-height: 139px; padding: 20px 0; min-width: 1176px; } 
 .wrapper #nav .menu_sub_list { background-color: #000; } 
@@ -194,12 +196,13 @@ main .btn_more { margin-top: 25px; padding: 0 32px 0 33px; font-size: 16px; font
 .section_info .text_area { float: left; margin: 196px 0 0 100px; } 
 .section_info .title { display: block; font-size: 48px; line-height: 60px; letter-spacing: -1px; } 
 .section_info .desc_list { position: relative; width: 450px; height: 102px; margin-top: 16px; } 
+.section_info .desc_list .desc {display: none;}
+.section_info .desc_list .desc.on {display: block;}
 .section_info .paginate { margin-top: 40px; font-size: 0; }  
 .section_info .paginate a { display: inline-block; width: 30px; height: 3px; padding: 10px 0; outline: 0; } 
 .section_info .paginate a+a { margin-left: 8px; } 
 .section_info .paginate a::before { content: ''; display: block; background-color: #e9eefe; height: 3px; } 
 .section_info .paginate a.on::before { background-color: #22d487; } 
-._swiper1_desc_2 { display: none; } 
 
 /* section_assistant */
 .section_assistant { position: relative; padding-top: 245px; } 
