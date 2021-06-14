@@ -1,8 +1,8 @@
 @charset "utf-8"; 
 /* header */
-.header_dark { position: fixed; top: 0; right: 0; left: 0; min-width: 1240px; height: 86px; text-align: center; z-index: 100; box-sizing: border-box; background-color: rgba(0, 0, 0, 0.8); transition: all 0.3s ease-in-out; border-bottom: 1px solid rgba(255,255,255,.05); } 
-.header_dark.up { background-color: #000; border-bottom: 1px solid rgba(0,0,0,.05); z-index: 200;} 
-.wrapper .header_dark { background-color: rgba(0, 0, 0,0.5); filter: invert(100%); } 
+.header_dark { position: fixed; top: 0; right: 0; left: 0; min-width: 1240px; height: 86px; text-align: center; z-index: 100; box-sizing: border-box; background-color: transparent; transition: all 0.3s ease-in-out; border-bottom: 1px solid rgba(255,255,255,.05); } 
+.header_dark.up { background-color: #000; border-bottom: 1px solid #222; z-index: 200;} 
+.wrapper .header_dark {filter: invert(100%); } 
 .wrapper .header_dark .menu_sub_list { border-bottom: 1px solid #2c2c2c; } 
 .animation { overflow: hidden; width: 100%; position: absolute; height: 1517px; } 
 .circle_right { width: 500px; height: 500px; position: absolute; top: -100px; right: -100px; background: radial-gradient(rgb(95, 221, 167), rgb(104, 223, 154),rgb(0, 204, 165)); border-radius: 100%; animation: right 6s infinite; } 
@@ -26,10 +26,11 @@
 .header .logo_link::before { content: ''; display: block; width: 145px; height: 22px; background: url(../img/sp_svg_icon.png) no-repeat -4px -4px; } 
 
 /* nav 전체메뉴 */
-#nav { float: left; } 
+#nav { float: left;} 
 #nav ul.menu_list { margin-left: 123px; text-align: center; font-size: 0; } 
 #nav ul.menu_list li.item { display: inline-block; } 
 #nav ul.menu_list li.item a.menu_link { display: block; height: 86px; padding: 34px 36px; color: rgba(255, 255, 255, .6); font-size: 16px; line-height: 16px; letter-spacing: -.25px; box-sizing: border-box; } 
+#nav ul.menu_list .item:hover #header {display: none;}
 #nav a.menu_link:hover .item_wrap { color: #fff; border-bottom: 1px solid #fff; } 
 #nav .menu_sub_list { display: none; background-color: rgba(0, 0, 0, 0.8); position: absolute; top: 86px; left: 0; right: 0; z-index: 999; min-height: 139px; padding: 20px 0; min-width: 1176px; } 
 .wrapper #nav .menu_sub_list { background-color: #000; } 
@@ -38,8 +39,8 @@
 #nav .sub_item { display: inline-block; vertical-align: top; } 
 #nav .menu_item_link { display: block; padding: 10px 0; font-size: 15px; font-weight: 700; line-height: 15px; color: rgba(255, 255, 255, .6); text-align: left; letter-spacing: -.35px; } 
 .hBtn { float: right; margin-top: 27px; font-size: 0; } 
-.hBtn a { color: rgba(255, 255, 255, .6); display: inline-block; padding: 8px 13px; font-size: 12px; box-sizing: border-box; font-weight: 700; line-height: 14px; border: 1px solid rgba(255, 255, 255, .6); border-radius: 5px; margin-left: 8px; transition: all .3s ease; } 
-.hBtn a:hover { color: #111; background: #fff; } 
+.hBtn a { color: rgba(255, 255, 255, 1); font-weight: thin; display: inline-block; padding: 8px 14px; font-size: 12px; box-sizing: border-box; line-height: 14px; border: .5px solid rgba(255, 255, 255, .5); border-radius: 4px; margin-left: 8px; transition: all .3s ease; } 
+.hBtn a:hover { color: rgba(0,0,0,1); background-color: rgba(255, 255, 255, 3); font-weight: bold;} 
 
 /* contents 슬라이더 */
 .wrap { min-width: 1280px; min-height: 100%; background-color: #fff; text-align: center; } 

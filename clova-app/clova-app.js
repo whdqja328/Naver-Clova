@@ -9,7 +9,10 @@ for (let i = 0, max = menuList.length; i < max; i++) {
   menuList[i].addEventListener('mouseleave', function (e) {
     e.target.classList.remove('on');
   });
+  
 }
+
+ 
 
 //Scroll Event
 const mainHeader = document.querySelector('.header_dark');
