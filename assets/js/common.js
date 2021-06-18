@@ -1,10 +1,10 @@
-let atag = document.querySelectorAll(".btn_more");
+// let atag = document.querySelectorAll(".btn_more");
 
-for (let i = 0; i < atag.length; i++) {
-  atag[i].addEventListener("click", function (reset) {
-    reset.preventDefault();
-  });
-}
+// for (let i = 0; i < atag.length; i++) {
+//   atag[i].addEventListener("click", function (reset) {
+//     reset.preventDefault();
+//   });
+// }
 
 // Nav Menu
 const menuList = document.querySelectorAll(".menu_list > li");
@@ -20,6 +20,7 @@ for (let i = 0, max = menuList.length; i < max; i++) {
 }
 
 //Scroll Event
+
 const mainHeader = document.querySelector(".header_dark");
 const fadeInList = document.querySelectorAll(".fade");
 
@@ -53,6 +54,8 @@ function fadeIn() {
 }
 
 window.addEventListener("scroll", fadeIn);
+
+
 
 // Slider
 document.addEventListener("DOMContentLoaded", function () {

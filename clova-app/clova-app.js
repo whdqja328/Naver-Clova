@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // 슬라이드 이동함수
-  function goToSlide(idx) {
+  const goToSlide = (idx) => {
     slideContainer.classList.add("animate");
     slideContainer.style.left = -slideWidth * idx + "px";
     currentIndex = idx;

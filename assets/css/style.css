@@ -1,7 +1,7 @@
 @charset "utf-8"; 
 /* header */
-.header_dark { position: fixed; top: 0; right: 0; left: 0; min-width: 1240px; height: 86px; text-align: center; z-index: 100; box-sizing: border-box; background-color: transparent; transition: all 0.3s ease-in-out; border-bottom: 1px solid rgba(255,255,255,.05); } 
-.header_dark.up { background-color: #000; border-bottom: 1px solid #222; z-index: 200;} 
+.header_dark { position: fixed; top: 0; right: 0; left: 0; min-width: 1240px; height: 86px; text-align: center; z-index: 100; box-sizing: border-box; background-color: rgba(0, 0, 0, 0.8); transition: all 0.3s ease-in-out; border-bottom: 1px solid rgba(255,255,255,.05); } 
+.header_dark.up { background-color: #000; border-bottom: 1px solid #222; z-index: 200; filter: invert();} 
 .wrapper .header_dark {filter: invert(100%); } 
 .wrapper .header_dark .menu_sub_list { border-bottom: 1px solid #2c2c2c; } 
 .animation { overflow: hidden; width: 100%; position: absolute; height: 1517px; } 
