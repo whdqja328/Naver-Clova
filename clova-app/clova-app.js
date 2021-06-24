@@ -9,10 +9,10 @@ for (let i = 0, max = menuList.length; i < max; i++) {
   menuList[i].addEventListener('mouseleave', function (e) {
     e.target.classList.remove('on');
   });
-  
+
 }
 
- 
+
 
 //Scroll Event
 const mainHeader = document.querySelector('.header_dark');
@@ -67,6 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
     timer = null;
 
   let slideWidth = slides[0].clientWidth;
+
 
   // 슬라이드 가로로 배열하기
   for (let i = 0; i < slideCount; i++) {
