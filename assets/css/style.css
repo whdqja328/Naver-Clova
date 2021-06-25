@@ -228,7 +228,7 @@ main .btn_more { margin-top: 25px; padding: 0 32px 0 33px; font-size: 16px; font
 
 .section_assistant .guide_area {position: relative; overflow: hidden; background-color: #edeff5; height: 180px;}
 .section_assistant .guide_list {position: absolute; top: 0; left: 50%; overflow: hidden; width: 2122px; text-align: center; transform: translateX(-50%);}
-.section_assistant .guide_list ul {padding: 60px 20px;}
+.section_assistant .guide_list ul {padding: 60px 20px; position: relative; }
 .section_assistant .guide_item {display: inline-block; margin-right: 20px; overflow: hidden; background-color: #fff; border-radius: 40px; box-shadow: 0 0 10px 0 rgb(121 121 126 / 8%), 0 1px 6px 0 rgb(121 121 126 / 15%); color:rgba(0,0,0,.6);}
 .section_assistant .guide_item.on {background-color: #00d37a;}
 .section_assistant .guide_link {display: block; padding: 20px 32px; font-size: 18px; font-weight: 700; line-height: 20px;}

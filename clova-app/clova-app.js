@@ -1,18 +1,15 @@
 // Nav Menu
 const menuList = document.querySelectorAll('.menu_list > li');
 
-for (let i = 0, max = menuList.length; i < max; i++) {
-  menuList[i].addEventListener('mouseenter', function (e) {
+menuList.forEach(menu => {
+  menu.addEventListener('mouseenter', function (e) {
     e.target.classList.add('on');
   });
 
-  menuList[i].addEventListener('mouseleave', function (e) {
+  menu.addEventListener('mouseleave', function (e) {
     e.target.classList.remove('on');
   });
-
-}
-
-
+})
 
 //Scroll Event
 const mainHeader = document.querySelector('.header_dark');
@@ -39,32 +36,20 @@ function fadeIn() {
   };
 
   beforePosition = afterPosition;
-
-  // for (let i = 0; i < fadeInList.length; i++) {
-
-  //     let elem = fadeInList[i];
-  //     let distinView = elem.getBoundingClientRect().top - window.innerHeight + 20;
-
-  //     if (distinView < 0) {
-  //         elem.classList.add('fade_in');
-  //     } else {
-  //         elem.classList.remove('fade_in');
-  //     }
-  // }
 };
 
 // Slider
 document.addEventListener("DOMContentLoaded", function () {
 
   // 변수 지정
-  const slideWrap = document.querySelector(".img_area"),
-    slideContainer = document.querySelector(".info_list"),
-    slides = document.querySelectorAll(".info_list li"),
-    pagerBtn = document.querySelectorAll(".paginate a");
+  const slideWrap = document.querySelector(".img_area");
+  const slideContainer = document.querySelector(".info_list");
+  const slides = document.querySelectorAll(".info_list li");
+  const pagerBtn = document.querySelectorAll(".paginate a");
 
-  let slideCount = slides.length,
-    currentIndex = 0,
-    timer = null;
+  let slideCount = slides.length;
+  let currentIndex = 0;
+  let timer = null;
 
   let slideWidth = slides[0].clientWidth;
 
@@ -128,3 +113,29 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
 });
+
+const ul = document.querySelector(".card_list ul");
+const width = document.querySelector(".card_item").offsetWidth;
+const totalWidth = width * 7;
+
+ul.style.width = totalWidth + "px"; // 이미지 크기만큼 width 증가
+
+const moveLeftAntimation = ul.animate([
+  { transform: 'translateX(0px)' }, 
+  { transform: 'translateX(0px)', offset: 0.95}, 
+  { transform: `translateX(-456px)` }
+], { 
+  duration: 3500,
+}); 
+
+
+moveLeftAntimation.onfinish = function() {
+  const removeItem = ul.removeChild(ul.firstElementChild);
+  ul.appendChild(removeItem); 
+  moveLeftAntimation.play();  
+}
+
+
+
+
+
